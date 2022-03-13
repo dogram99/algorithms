@@ -4,6 +4,7 @@
  * @param arr
  * @returns {*}
  */
+
 const simpleArray = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11];
 let n = 0;
 
@@ -20,8 +21,8 @@ const insertionSort = (arr) => {
     }
     arr[j + 1] = temp;
   }
-  return newArr
-}
+  return newArr;
+};
 
-console.log('Result =', insertionSort(simpleArray))
-console.log(`n = ${n}`)
+console.log("Result =", insertionSort(simpleArray));
+console.log(`n = ${n}`);
