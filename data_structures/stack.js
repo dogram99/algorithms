@@ -1,10 +1,12 @@
+const searchByStack = require("../helpers/searchByStack");
+
 /**
  * O(1)
  * Push
  * Pop
  *
  * O(n)
- * Searching
+ * Search
  * Access
  */
 
@@ -40,16 +42,17 @@ class Stack {
 
 const stack = new Stack();
 
-stack.push("value1"); // Push
-stack.push("value2"); // Push
-stack.push("value3"); // Push
-stack.push("value4"); // Push
+stack.push("value1") // Push ~ O(1)
+stack.push("value2") // Push ~ O(1)
+stack.push("value3") // Push ~ O(1)
+stack.push("value4") // Push ~ O(1)
 
 console.log(stack.size()) // 4
 
-stack.pop() // Pop
+stack.pop() // Pop ~ O(1)
 
 console.log(stack.size()) // 3
 
 console.log(stack.peek()) // value3
 
+console.log(searchByStack(stack, 'value1')); // value1 ~ O(n)
