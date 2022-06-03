@@ -42,10 +42,9 @@ class Stack {
 
 const stack = new Stack();
 
-stack.push("value1") // Push ~ O(1)
-stack.push("value2") // Push ~ O(1)
-stack.push("value3") // Push ~ O(1)
-stack.push("value4") // Push ~ O(1)
+for (let i = 1; i <= 4; i++) {
+  stack.push(`value${i}`) // Push ~ O(1)
+}
 
 console.log(stack.size()) // 4
 
