@@ -1,4 +1,4 @@
-module.exports = function searchByStack(stack, searchElement) {
+function searchByStack(stack, searchElement) {
 
   if(!stack.size()) {
     return -1;
@@ -19,3 +19,5 @@ module.exports = function searchByStack(stack, searchElement) {
 
   return -1;
 }
+
+module.exports = searchByStack;
