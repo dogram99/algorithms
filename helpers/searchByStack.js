@@ -6,7 +6,7 @@ function searchByStack(stack, searchElement) {
 
   const temp = [];
 
-  for(el in stack.storage) {
+  for(let el in stack.storage) {
     const current = stack.storage[el];
     temp.push(current);
   }
